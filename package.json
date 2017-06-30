@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "@tsmean/utils",
   "version": "1.0.0",
   "description": "A library of pure utility functions",
   "main": "dist/index.js",
