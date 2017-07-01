@@ -1,17 +1,17 @@
-import { CoreUtils } from './core';
+import { ImmutabilityUtils } from './immutability';
 
 import * as mocha from 'mocha';
 import * as chai from 'chai';
 
 const expect = chai.expect;
-describe('Core Utils', () => {
+describe('Immutability Utils', () => {
 
   it('should correctly deep copy' , () => {
     const myObject = {
       hello: "world"
     };
 
-    const copiedData = CoreUtils.deepCopy(myObject);
+    const copiedData = ImmutabilityUtils.deepCopy(myObject);
     
     expect(copiedData.hello).to.equal("world");
     
