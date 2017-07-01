@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "mocha --reporter spec --compilers ts:ts-node/register 'src/**/*.test.ts'"
+    "test": "mocha --reporter spec --compilers ts:ts-node/register 'src/**/*.test.ts'",
+    "pub": "tsc && git add --all && git commit -m update && npm version patch && npm publish && git push"
   },
   "repository": {
     "type": "git",
