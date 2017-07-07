@@ -23,11 +23,9 @@ export namespace WebUtils {
 
   }
 
-  export function doOnEnter(e: KeyboardEvent, callback: Function) {
+  export function isEnter(e: KeyboardEvent): boolean {
     const charCode = e.charCode || e.keyCode || e.which;
-    if(charCode === 13) {
-      callback();
-    }
+    return charCode === 13;
   }
 
 }
